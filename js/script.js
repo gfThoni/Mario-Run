@@ -1,6 +1,7 @@
 const mario = document.querySelector('.mario');
 const pipe = document.querySelector('.pipe');
 const score = document.querySelector('.score');
+const reset = document.querySelector('.reset');
 
 let pontos = 0;
 
@@ -50,5 +51,9 @@ const loop = setInterval(() => {
     }
 
 }, 10);
+
+reset.addEventListener('click', () => {
+    location.reload();
+});
 
 document.addEventListener('keydown', jump);

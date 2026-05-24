@@ -13,6 +13,26 @@
     background: linear-gradient(#87ceeb, #e0f6ff);
 }
 
+.reset {
+    position: absolute;
+
+    bottom: 10px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    padding: 10px 20px;
+
+    border: none;
+    border-radius: 10px;
+
+    font-size: 20px;
+    cursor: pointer;
+
+    background: linear-gradient(rgb(255, 0, 0), rgb(66, 000, 255));
+    color: rgb(0, 0, 0);
+}
+
 .pipe{
     position: absolute;
     bottom: 0;
