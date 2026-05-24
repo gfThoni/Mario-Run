@@ -8,7 +8,7 @@ const scoreInterval = setInterval(() => {
 
     pontos += 10;
 
-    score.innerText = `PONTOS: ${pontos}`;
+    score.innerText = `Pontos: ${pontos}`;
 
 }, 1000);
 
@@ -21,7 +21,7 @@ const jump = () => {
 }
 
 
-score.innerText = `PONTOS: ${pontos}`;
+score.innerText = `Pontos: ${pontos}`;
 
 const loop = setInterval(() => {
 
