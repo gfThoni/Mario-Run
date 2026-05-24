@@ -17,9 +17,18 @@
     position: absolute;
     bottom: 0;
     width: 95px;
-    
+
     animation: pipe-animation 2s infinite linear;
-}  
+} 
+
+.score {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    font-family: Arial;
+    color: rgb(0, 0, 0);
+}
 
 .mario{
     width: 130px;

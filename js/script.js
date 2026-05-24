@@ -1,5 +1,16 @@
 const mario = document.querySelector('.mario');
 const pipe = document.querySelector('.pipe');
+const score = document.querySelector('.score');
+
+let pontos = 0;
+
+const scoreInterval = setInterval(() => {
+
+    pontos += 10;
+
+    score.innerText = `PONTOS: ${pontos}`;
+
+}, 1000);
 
 const jump = () => {
     mario.classList.add('jump');
@@ -8,6 +19,9 @@ const jump = () => {
         mario.classList.remove('jump');
     }, 500);
 }
+
+
+score.innerText = `PONTOS: ${pontos}`;
 
 const loop = setInterval(() => {
 
@@ -32,6 +46,7 @@ const loop = setInterval(() => {
         mario.style.marginLeft = '50px';
 
         clearInterval(loop);
+        clearInterval(scoreInterval);
     }
 
 }, 10);
